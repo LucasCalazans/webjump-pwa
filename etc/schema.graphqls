@@ -1,0 +1,16 @@
+type Query {
+    customCMSPage: [CustomCMSPages] @resolver(class: "Webjump\\PWA\\Model\\Resolver\\CustomCMSPages") @doc(description: "Query test")
+}
+
+type CustomCMSPages {
+    title: String @doc(description: "Page title")
+    url_path: String @doc(description: "Page url")
+    content: String @doc(description: "CMS Page content")
+    content_heading: String
+    meta_title: String
+    meta_keywords: String
+    meta_description: String
+    store_id: [String]
+    custom_theme_from: String
+    custom_theme_to: String
+}

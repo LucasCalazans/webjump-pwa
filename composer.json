@@ -1,0 +1,13 @@
+{
+    "name": "webjump/module-pwa",
+    "description": "N/A",
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Webjump\\PWA\\": ""
+        }
+    }
+}
